@@ -1,6 +1,6 @@
 [workspace]
 members = [
-    "anchor",
+    "foo",
     "testlib",
-    "lido",
+    "bar",
 ]

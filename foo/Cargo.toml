@@ -1,20 +1,19 @@
 [package]
-name = "lido"
-version = "0.1.0"
+authors = ["Chorus One <techops@chorus.one>"]
+license = "GPL-3.0"
 edition = "2018"
+name = "foo"
+version = "0.0.1"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
 [features]
 no-entrypoint = []
 test-bpf = []
 
 [dependencies]
-borsh = "0.9.1"
 solana-program = "1.7.8"
-# project2 = {path = "../project2", features = ["no-entrypoint"]}
-serde = "1.0.121"
-spl-token = { version = "3.1.1", features = ["no-entrypoint"] }
-
+# lido = {path = "../lido", features = ["no-entrypoint"]}
 
 [dev-dependencies]
 testlib = { path = "../testlib"}
