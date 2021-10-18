@@ -1,8 +1,3 @@
-// SPDX-FileCopyrightText: 2021 Chorus One AG
-// SPDX-License-Identifier: GPL-3.0
-
-//! Holds a test context, which makes it easier to test with a Solido instance set up.
-
 use solana_program::instruction::Instruction;
 use solana_program_test::{processor, ProgramTest, ProgramTestContext};
 use solana_sdk::account::Account;
@@ -47,7 +42,7 @@ impl Context {
             }],
         )
         .await
-        .expect("Failed to initialize Solido instance.");
+        .expect("Failed to initialize instance.");
 
         result
     }
